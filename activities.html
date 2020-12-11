@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Heaven mountains</title>
+</head>
+
+<body>
+
+    <header id="home">
+        <!-- Mobile menu -->
+        <a href="#" class="open-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div>
+            <nav class="main-nav container">
+                <div class="main-nav-container">
+                    <a href="#home"><img src="img/Heavens-logo.png" alt="Mountains logo"></a>
+                    <ul class="nav-menu">
+                        <a href="index.html">
+                            <li>O nama</li>
+                        </a>
+                        <a href="activities.html">
+                            <li>Ponuda</li>
+                        </a>
+                        <a href="gallery.html">
+                            <li>Galerija</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Kontakt</li>
+                        </a>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+        <div>
+            <div class="centered-elements">
+                <h1>Hajdemo u <span>PLANINE</span></h1>
+                <div class="centered-buttons">
+                    <a href="activities.html">Istraži</a>
+                    <a href="contact.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="video-container">
+                <video playsinline autoplay muted loop id="bgvid" src="video/MountainsVideo.mp4"></video>
+            </div>
+            <a href='#about'>
+                <div id="arrow-down"></div>
+            </a>
+        </div>
+    </header>
+
+
+    <section class="activities" id="activities">
+        <div class="activity-container">
+            <div class="image-container">
+                <img src="img/img3.jpg" alt="Climbing">
+                <div class="overlay">Planinarite sa nama!</div>
+            </div>
+            <h3>Planinarenje</h3>
+            <p>Planinarenjem se možete baviti individualno ili u grupi, isto tako to može biti uspon na neko relativno nisko brdo koji traje par sati, a može biti poduhvat od nekoliko meseci kad se osvaja neki izuzetno visok vrhunac, ili nekoliko njih u
+                nizu. Veliki broj planinara ima različite motive, a uglavnom su to: izazov, uživanje u netaknutoj prirodi i druženje. Planinarenje često zahteva dobru kondiciju, jer ono obuhvata penjanje, silaženje, nošenje ranca itd. Iskustvo je potrebno
+                za korišćenje karte, kompasa, visinomera, i druge opreme.</p>
+        </div>
+        <div class="activity-container">
+            <div class="image-container">
+                <img src="img/img4.jpg" alt="Skiing">
+                <div class="overlay">Uživajte u skijanju!</div>
+            </div>
+            <h3>Skijanje</h3>
+            <p>Skijanje na snegu je način kretanja snežnim površinama upotrebom skija koje su skijaškim vezovima pričvršćene za noge skijaša. Iako je skijanje prvenstveno nastalo kao način transporta odnosno kretanja po snegu, kroz 20. vek je preraslo u
+                popularni način rekreacije i sport. Osim skijanja na snegu, poznato je i skijanje na vodi, pri čemu skijaš koristi vučnu silu motornog čamca da ostvari brzinu potrebnu za održavanje na vodi. Skijanje je i snadardni sport na zimskim olimpijskim
+                igrama. Dođite i uverite se kako se uživa!</p>
+        </div>
+        <div class="activity-container">
+            <div class="image-container">
+                <img src="img/img5.jpg" alt="Snowboarding">
+                <div class="overlay">Hajde da skijamo!</div>
+            </div>
+            <h3>Snowboarding</h3>
+            <p>Snowboarding ili daskanje na snegu, je zimski sport u kojem snouborderi stoje na dasci (snoubordu) koja je u proseku dugačka između 150 i 160 cm i široka 25 cm. Za razliku od skijanja kod snouborda se ne koriste skijaški štapovi, a snouborderi
+                ne stoje uspravno kao skijaši nego su postrance ili na strani, nose buce posebno dizajnirane za snoubord, i koje su zakačene za dasku pomoću vezova. Snoubord je nastao u SAD-u 1960-ih kao kombinacija surfovanja, skejetinga i skijanja.
+                U program Zimskih olimpijskih igara ušao je 1998.</p>
+        </div>
+        <div class="activity-container">
+            <div class="image-container">
+                <img src="img/img6.jpg" alt="Rest">
+                <div class="overlay">Odmorite se kod nas!</div>
+            </div>
+            <h3>Prijatan odmor</h3>
+            <p>Trudimo se da planinsko uživanje upotpunimo i kvalitetnim uslugama vezanim za Vaš odmor u toku dana. Na raspolaganju imate četiri velika bazena, dva mala dečija bazena, termalni bazen, saunu, slane sobe, stolove za bilijar, prostor namenjen
+                za kuglanje, pikado, stoni fudbal, društvene igre... Takođe imamo bogat restoran tradicionalne kuhinje po svačijem ukusu, kao i bar sa dosta kvalitetnog pića. Kada se sve spoji, odmor mora biti veoma kvalitetan. Ništa bolje od uživanja
+                sa porodicom ili prijateljima uz šoljicu čaja nakon dana u snegu! </p>
+        </div>
+    </section>
+
+    
+
+    <section class="contact">
+        <div class="footer">
+            <a href="https://goo.gl/maps/icfmRqUgCTQMxXmV6" target="_blank" id="map">
+                <div id='google-maps'></div>
+            </a>
+            <div class="contact-us" id="contact">
+                <h2>Kontaktiraj nas</h2>
+                <p>Ukoliko imaš bilo šta da pitaš, pošalji nam e-mail, a mi ćemo se potruditi da ti odgovorimo u najkraćem mogućem roku.</p>
+                <br>
+                <form action="https://formspree.io/mleeakbw" method="POST">
+                    <label for="name">Vaše ime i prezime</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="mail">E-mail adresa</label>
+                    <input type="email" name="mail" id="mail" required>
+                    <label for="message">Vaša poruka</label>
+                    <textarea name="idMessage" id="message" rows="5"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <a href="#home">
+        <div class="backtotop">
+            <div></div>
+        </div>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

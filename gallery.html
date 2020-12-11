@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Heaven mountains</title>
+</head>
+
+<body>
+
+    <header id="home">
+        <!-- Mobile menu -->
+        <a href="#" class="open-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div>
+            <nav class="main-nav container">
+                <div class="main-nav-container">
+                    <a href="#home"><img src="img/Heavens-logo.png" alt="Mountains logo"></a>
+                    <ul class="nav-menu">
+                        <a href="index.html">
+                            <li>O nama</li>
+                        </a>
+                        <a href="activities.html">
+                            <li>Ponuda</li>
+                        </a>
+                        <a href="gallery.html">
+                            <li>Galerija</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Kontakt</li>
+                        </a>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+        <div>
+            <div class="centered-elements">
+                <h1>Hajdemo u <span>PLANINE</span></h1>
+                <div class="centered-buttons">
+                    <a href="activities.html">Istraži</a>
+                    <a href="contact.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="video-container">
+                <video playsinline autoplay muted loop id="bgvid" src="video/MountainsVideo.mp4"></video>
+            </div>
+            <a href='#about'>
+                <div id="arrow-down"></div>
+            </a>
+        </div>
+    </header>
+
+    
+
+    <section class="gallery" id="gallery" style="margin-top: 150px;">
+        <div><img src="img/img7.jpg" alt="mountain gallery - image 1"></div>
+        <div><img src="img/img8.jpg" alt="mountain gallery - image 2"></div>
+        <div><img src="img/img9.jpg" alt="mountain gallery - image 3"></div>
+        <div><img src="img/img10.jpg" alt="mountain gallery - image 4"></div>
+        <div><img src="img/img11.jpg" alt="mountain gallery - image 5"></div>
+        <div><img src="img/img12.jpg" alt="mountain gallery - image 6"></div>
+        <div><img src="img/img13.jpg" alt="mountain gallery - image 7"></div>
+        <div><img src="img/img14.jpg" alt="mountain gallery - image 8"></div>
+    </section>
+
+    <section class="contact">
+        <div class="footer">
+            <a href="https://goo.gl/maps/icfmRqUgCTQMxXmV6" target="_blank" id="map">
+                <div id='google-maps'></div>
+            </a>
+            <div class="contact-us" id="contact">
+                <h2>Kontaktiraj nas</h2>
+                <p>Ukoliko imaš bilo šta da pitaš, pošalji nam e-mail, a mi ćemo se potruditi da ti odgovorimo u najkraćem mogućem roku.</p>
+                <br>
+                <form action="https://formspree.io/mleeakbw" method="POST">
+                    <label for="name">Vaše ime i prezime</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="mail">E-mail adresa</label>
+                    <input type="email" name="mail" id="mail" required>
+                    <label for="message">Vaša poruka</label>
+                    <textarea name="idMessage" id="message" rows="5"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <a href="#home">
+        <div class="backtotop">
+            <div></div>
+        </div>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
